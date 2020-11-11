@@ -207,13 +207,6 @@ class Network:
     def getPos(self):
         return self.pos
 
-    def getPic(self):
-        try:
-            self.client.connect(self.addr)
-            return self.client.recv(2048).decode()
-        except:
-            pass
-
 
     def connect(self):
         try:

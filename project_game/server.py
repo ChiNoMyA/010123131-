@@ -2,7 +2,7 @@ import socket
 from _thread import *
 import sys
 
-server = "192.168.43.189" #192.168.43.189(telephone)#192.168.1.112(wifi_home)
+server = "192.168.1.110" #192.168.43.189(telephone)#192.168.1.112(wifi_home)
 port = 5555
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -12,7 +12,7 @@ try:
 except socket.error as e:
     str(e)
 
-s.listen(2)
+s.listen(0)
 print("Waiting for a connection, Server Started")
 
 def read_pos(str):
